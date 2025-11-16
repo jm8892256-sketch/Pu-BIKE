@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pubike: Manutenção de Alta Performance</title>
+    <!-- Carrega o Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração de cor customizada para o azul neon -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-blue': '#00FFFF', /* Azul/Ciano Neon Vibrante */
+                        'dark-gray': '#121212',
+                        'light-gray': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Removido o efeito neon do H1 principal para um visual mais limpo */
+        /* Mantendo o brilho no botão de CTA */
+        .neon-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+        }
+        .neon-button:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 0.5);
+            transform: scale(1.02);
+            background-color: #008080; /* Um tom mais escuro ao hover */
+        }
+        /* Fundo escuro elegante */
+        body {
+            background-color: #121212;
+            color: #F3F4F6;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 flex flex-col items-center">
+
+    <!-- Container Principal do Anúncio -->
+    <div class="max-w-4xl w-full bg-gray-800 rounded-2xl shadow-2xl p-6 sm:p-10 border border-neon-blue/30">
+
+        <!-- Header e Título Limpo -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl sm:text-6xl font-black tracking-widest text-light-gray uppercase">
+                PUBIKE
+            </h1>
+            <p class="mt-2 text-2xl sm:text-3xl font-semibold text-neon-blue/80">MANUTENÇÃO DE ALTA PERFORMANCE.</p>
+            <p class="mt-1 text-lg sm:text-xl font-light text-light-gray/90">Eleve a Sua Experiência Ciclística.</p>
+        </header>
+
+        <!-- Seção Principal de Conteúdo -->
+        <section class="mb-10 text-gray-300 space-y-6">
+            <p>Para o ciclista que exige excelência, que entende que cada componente e cada ajuste influenciam diretamente a liberdade e o prazer de pedalar, apresentamos a Pubike. Não é apenas manutenção; é uma curadoria de desempenho para a sua bicicleta.</p>
+
+            <h2 class="text-2xl font-semibold text-neon-blue mt-6">A Pubike cuida da sua máquina no mais alto nível.</h2>
+
+            <p>Nossa expertise é dedicada a assegurar que sua bicicleta opere com precisão impecável, garantindo que cada jornada seja uma extensão fluida da sua paixão. Nossos serviços, meticulosamente executados, incluem:</p>
+
+            <!-- Lista de Serviços (3 Colunas no Desktop) -->
+            <div class="grid md:grid-cols-3 gap-6 pt-4 text-center">
+                <!-- Serviço 1 -->
+                <div class="bg-gray-700 p-5 rounded-lg border border-neon-blue/20">
+                    <span class="text-4xl text-neon-blue block mb-2">🔧</span>
+                    <h3 class="font-bold text-lg text-light-gray">Revisão Detalhada</h3>
+                    <p class="text-sm text-gray-400 mt-1">Afinação precisa, lubrificação especializada e inspeção de torque em pontos críticos.</p>
+                </div>
+                <!-- Serviço 2 -->
+                <div class="bg-gray-700 p-5 rounded-lg border border-neon-blue/20">
+                    <span class="text-4xl text-neon-blue block mb-2">⚙️</span>
+                    <h3 class="font-bold text-lg text-light-gray">Reparos Exclusivos</h3>
+                    <p class="text-sm text-gray-400 mt-1">Soluções ágeis e de alta qualidade para imprevistos e componentes delicados.</p>
+                </div>
+                <!-- Serviço 3 -->
+                <div class="bg-gray-700 p-5 rounded-lg border border-neon-blue/20">
+                    <span class="text-4xl text-neon-blue block mb-2">⚡</span>
+                    <h3 class="font-bold text-lg text-light-gray">Otimização Avançada</h3>
+                    <p class="text-sm text-gray-400 mt-1">Manutenção e customização de suspensões e sistemas hidráulicos/eletrônicos.</p>
+                </div>
+            </div>
+            
+            <p class="mt-6">**Invista na longevidade e na performance superior da sua bicicleta.**</p>
+        </section>
+
+        <!-- Seção AGENDE SEU HORÁRIO e Contato -->
+        <div class="mt-8 bg-gray-700 rounded-xl p-6 border-l-4 border-neon-blue shadow-inner">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+                <!-- Coluna de Agendamento -->
+                <div>
+                    <h3 class="text-2xl font-bold text-neon-blue mb-3">AGENDE SEU HORÁRIO.</h3>
+                    <p class="text-gray-300 mb-4">Priorizamos seu tempo e a excelência no atendimento. Entre em contato imediato via WhatsApp para verificar a disponibilidade e reservar seu horário.</p>
+
+                    <a href="https://wa.me/message/GMZJYN56NEFGK1" target="_blank" class="block w-full text-center py-3 px-6 rounded-full text-lg font-bold bg-neon-blue text-dark-gray neon-button uppercase">
+                        CHAMAR NO WHATSAPP AGORA
+                    </a>
+                </div>
+
+                <!-- Coluna de Informações de Contato -->
+                <div class="border-t md:border-t-0 md:border-l border-gray-600 md:pl-6 pt-4 md:pt-0 space-y-3">
+                    <h4 class="text-xl font-semibold text-light-gray">Informações de Contato</h4>
+                    <p class="text-gray-300">
+                        <span class="font-bold text-neon-blue">WhatsApp:</span> <a href="https://wa.me/message/GMZJYN56NEFGK1" target="_blank" class="hover:underline">(73) 98158-7449</a>
+                    </p>
+                    <p class="text-gray-300">
+                        <span class="font-bold text-neon-blue">Endereço:</span> Salobrinho, Ilhéus - BA
+                    </p>
+                    <p class="text-gray-300">
+                        <span class="font-bold text-neon-blue">Proprietário:</span> Jeferson
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer / Tagline Final -->
+        <footer class="mt-10 text-center">
+            <p class="text-lg font-semibold text-light-gray/70">
+                **Pubike: Sua bicicleta em alto nível.**
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
